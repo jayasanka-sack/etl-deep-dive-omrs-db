@@ -1,0 +1,27 @@
+version: "3.7"
+
+services:
+
+  db:
+    image: mariadb:10.11.7
+    restart: "unless-stopped"
+    command: "mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_general_ci"
+    healthcheck:
+      test: "mysql --user=openmrs --password=openmrs --execute \"SHOW DATABASES;\""
+      interval: 3s
+      timeout: 1s
+      retries: 5
+    environment:
+      MYSQL_DATABASE: openmrs
+      MYSQL_USER: openmrs
+      MYSQL_PASSWORD: openmrs
+      MYSQL_ROOT_PASSWORD: openmrs
+    volumes:
+      - db-data:/var/lib/mysql
+      - ./db:/docker-entrypoint-initdb.d
+    ports:
+      - "3307:3306"
+
+volumes:
+  openmrs-data: ~
+  db-data: ~
