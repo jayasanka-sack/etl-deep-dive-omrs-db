@@ -62,7 +62,7 @@ sudo usermod -aG docker $USER
 
 ## Quick Start
 
-### 1. Clone the Repository
+### 1. Clone the Repository or just click code > download zip option in the repo
 ```bash
 git clone https://github.com/jayasanka-sack/etl-deep-dive-omrs-db
 cd etl-deep-dive-omrs-db
