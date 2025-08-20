@@ -64,7 +64,7 @@ sudo usermod -aG docker $USER
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/jayasanka-sack/etl-deep-dive-omrs-db
 cd etl-deep-dive-omrs-db
 ```
 
