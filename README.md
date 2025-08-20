@@ -8,13 +8,13 @@ This repository contains a Docker setup for a pre-configured OpenMRS database wi
 
 <details>
 <summary>mac OS</summary>
-#### macOS
+
 
 1. **Manual Installation:**
    - Download Docker Desktop from [https://www.docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop)
    - Install and launch Docker Desktop
    - Ensure Docker is running (you should see the Docker icon in your menu bar)
-2. **Or Using Homebrew:**
+2. Or ** Using Homebrew:**
    ```bash
    brew install --cask docker
    ```
@@ -22,18 +22,17 @@ This repository contains a Docker setup for a pre-configured OpenMRS database wi
 </details>
 
 <details>
-<summary>mac OS</summary>
-#### Windows
+<summary>Windows</summary>
+
 1. Download Docker Desktop from [https://www.docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop)
 2. Install and launch Docker Desktop
 3. Ensure WSL 2 is enabled if prompted
 </details>
 
 <details>
-<summary>mac OS</summary>
+<summary>Linux (Ubuntu/Debian)</summary>
 
 
-#### Linux (Ubuntu/Debian)
 ```bash
 # Update package index
 sudo apt-get update
