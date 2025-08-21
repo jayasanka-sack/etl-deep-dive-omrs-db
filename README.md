@@ -70,7 +70,7 @@ cd etl-deep-dive-omrs-db
 
 ### 2. Start the Database Container
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 This command will:
@@ -81,14 +81,14 @@ This command will:
 
 ### 3. Verify the Container is Running
 ```bash
-docker-compose ps
+docker compose ps
 ```
 
 You should see the `db` service running with status "Up".
 
 ### 4. Check Container Logs (Optional)
 ```bash
-docker-compose logs db
+docker compose logs db
 ```
 
 ## Database Connection Details
@@ -105,12 +105,12 @@ docker-compose logs db
 
 ### Stop the Container
 ```bash
-docker-compose down
+docker compose down
 ```
 
 ### Stop and Remove Data Volumes
 ```bash
-docker-compose down -v
+docker compose down -v
 ```
 
 ## Database Features
@@ -132,11 +132,11 @@ ports:
 
 ### Container Won't Start
 1. Check if Docker is running: `docker --version`
-2. Check container logs: `docker-compose logs db`
+2. Check container logs: `docker compose logs db`
 3. Ensure no other services are using the required ports
 
 ### Database Connection Issues
-1. Verify the container is running: `docker-compose ps`
-2. Check the health status: `docker-compose ps --format "table {{.Name}}\t{{.Status}}"`
+1. Verify the container is running: `docker compose ps`
+2. Check the health status: `docker compose ps --format "table {{.Name}}\t{{.Status}}"`
 3. Ensure you're using the correct port (3307)
 
